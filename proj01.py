@@ -33,6 +33,9 @@ while doesUserContinue != "B":
                     overageCharge = roundedMileage - allowedMiles
                     totalCharge = baseCharge * numDays + ( overageCharge * 0.25)
                     print(totalCharge)
+                else:
+                    totalCharge = baseCharge * numDays
+                    print("$", totalCharge)
 
 
                 doesUserContinue = input("do you want to continue?: ")
