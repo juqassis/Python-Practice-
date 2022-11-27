@@ -41,7 +41,12 @@ while doesUserContinue != "B":
                 doesUserContinue = input("do you want to continue?: ")
             elif customerCode == "W":
                 print("You selected W")
-                #code here 
+                if numDays < 7:
+                    baseCharge = 190 / numDays
+                else:
+                    baseCharge = 190
+                if roundedMileage > 900 and numDays == 7 and roundedMileage < 1500:
+                    baseCharge = 190/numDays
                 doesUserContinue = input("do you want to continue?: ")
 
             
